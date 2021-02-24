@@ -1,0 +1,15 @@
+{
+  "presets": ["es2015","mobx","stage-1"],
+  "plugins": [
+    "transform-class-properties",
+    "transform-react-jsx",
+    "transform-object-rest-spread",
+    "transform-decorators-legacy",
+    ["@babel/plugin-proposal-decorators", {"legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+    ["module-resolver", {
+      "root": ["./src"]
+      }],
+      ["import-rename", {"^(.*)\\.jsx$": "$1"}]
+    ]
+  }
